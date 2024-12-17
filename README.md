@@ -34,12 +34,12 @@ OR FOLLOW INSTRUCTIONS BELOW
    git clone https://github.com/Krystalanh/Portfolio.git
 
 
-cd Portfolio
+2. cd Portfolio
 
-pnpm install
+3. pnpm install
 
-pnpm run dev
+4. pnpm run dev
 
-http://localhost:5173
+5. http://localhost:5173
 
-https://Krystalanh.github.io/Portfolio/
+6. https://Krystalanh.github.io/Portfolio/
