@@ -1,10 +1,6 @@
-Welcome to my website! I am Krystal Anh Phan and this is my final project for Front Web-Design (CPSC 349). 
-Here are the instructions to get my page running and experience it!
-https://Krystalanh.github.io/Portfolio/
-
 # Portfolio Website
 
-Welcome to my Portfolio website repository!
+Welcome to my website and my world!
 
 ## Table of Contents
 
@@ -18,11 +14,13 @@ Welcome to my Portfolio website repository!
 
 ## Description
 
-This is my personal portfolio website showcasing my projects, skills, and achievements.
+I am Krystal Anh Phan and this is my final project for Front Web-Design (CPSC 349). 
 
 ## Getting Started
 
-These steps will guide you through setting up the project on your local machine.
+Here are the instructions to get my page running and experience it!
+Link to head directly there: https://Krystalanh.github.io/Portfolio/
+OR FOLLOW INSTRUCTIONS BELOW
 
 ### Prerequisites
 
