@@ -1,0 +1,318 @@
+/* General Reset and Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+.resume-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffb6c1; /* Accent color */
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #aaaaaa;
+}
+
+@media (max-width: 768px) {
+  .about-box {
+    padding: 0.5rem;
+  }
+}
+
+
+/* Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Links Styled as Buttons */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px; /* Spacing between buttons */
+}
+
+nav ul li a {
+  display: inline-block; /* Makes the link behave like a button */
+  padding: 10px 20px; /* Adds padding inside the button */
+  border: 2px solid white; /* Button border */
+  border-radius: 25px; /* Rounded edges for the button */
+  text-decoration: none; /* Removes underline */
+  color: white; /* White text */
+  font-weight: bold; /* Bold font for buttons */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  background: transparent; /* Transparent background by default */
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+  background: #ffb6c1; /* Highlight color for hover */
+  color: #333; /* Text color changes on hover */
+  border-color: #ffb6c1; /* Border matches hover background */
+}
+
+
+/* Sections */
+.section {
+  height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+}
+
+#home {
+  background: #ffb6c1; /* Soft pink */
+}
+
+#about {
+  background: #aaaaaa; /* Peachy pink */
+}
+
+#skills {
+  background: #ffb6c1; /* Soft pink */
+}
+
+#projects {
+  background: #aaaaaa; /* Blush pink */
+}
+
+#contact {
+  background: #ffb6c1; /* Classic pink */
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+p, ul {
+  font-size: 1.1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  background-color: #333; /* Dark background for footer */
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .section {
+    padding: 10px;
+  }
+}
+/* Add styles for the 'about-me' section and boxes */
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-box {
+  padding: 1rem;
+  background-color: #585858;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #ffffff; /* Change font color to black */
+} 
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #ffb6c1;
+  animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.intro-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card i {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  animation: fadeInDown 1.5s ease;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.profile-photo img {
+  border-radius: 50%;
+  width: 100%; /* Adjust to the desired width */
+  height: 100%; /* Adjust to the desired height */
+  object-fit: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+}
+
+h1, h2 {
+  font-size: 3rem; /* Increase font size for headings */
+}
+
+p {
+  font-size: 1.5rem; /* Increase font size for paragraphs */
+}
+
+/* For smaller elements */
+.card p {
+  font-size: 1.2rem; /* Adjust smaller text like in cards */
+}
+
+/* About Button */
+.about-button {
+  font-size: 1.5rem; /* Larger font size */
+  padding: 0.5rem 1rem;
+  background-color: #333; /* Green background */
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1rem 0;
+  transition: background-color 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #aaaaaa; /* Darker green on hover */
+}
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/*CONTACT BUTTONS*/
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffb6c1; /* Accent color */
+  color: black;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #aaaaaa;
+  ; /* Darker background on hover */
+}
+
+/*SKILLS AESTHETIC*/
+.skill-category p {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.skill-category p:hover {
+  color: #ffffff;
+  transform: translateX(10px);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem; /* Adjust space between skill categories */
+}
+
+.skill-category {
+  background-color: #333;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  background-color: #aaaaaa;
+  transform: scale(1.05);
+}
+
+.skill-category h3 {
+  color: #ffb6c1; /* Accent color */
+  margin-bottom: 1rem;
+}
+
+.skill-category p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.skill-category i {
+  margin-right: 8px;
+}
