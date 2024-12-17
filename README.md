@@ -16,7 +16,7 @@ Welcome to my website and my world!
 
 I am Krystal Anh Phan and this is my final project for Front Web-Design (CPSC 349). 
 
-## Getting Started
+## Lets Get Started
 
 Here are the instructions to get my page running and experience it!
 Link to head directly there: https://Krystalanh.github.io/Portfolio/
