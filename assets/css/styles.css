@@ -31,20 +31,28 @@ p {
   font-size: 1.5rem; /* Adjusted font size for better responsiveness */
 }
 
-/* Resume Button */
 .resume-button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 5px 10px; /* Similar padding to enhypen-button */
+  font-size: 1.2rem; /* Similar font size to enhypen-button */
+  color: #000000; /* Text color */
   background-color: #ffb6c1; /* Accent color */
-  color: rgb(0, 0, 0);
   text-decoration: none;
-  border-radius: 25px;
+  border-radius: 20px; /* Slightly rounded corners */
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  border: 2px solid #333; /* Contrast border color */
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Similar shadow style */
 }
+
 .resume-button:hover {
-  background-color: #aaaaaa;
+  background-color: #aaaaaa; /* Light pink on hover */
+  color: #333; /* Text color changes to dark gray */
+  transform: scale(1.05); /* Slightly enlarged effect */
+  border-color: #333; /* Invert border color on hover */
 }
+
 
 @media (max-width: 768px) {
   .about-box {
