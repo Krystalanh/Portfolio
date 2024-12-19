@@ -143,14 +143,24 @@ footer p {
   flex-direction: column;
   gap: 1rem;
 }
-
 .about-box {
   padding: 1rem;
   background-color: #585858;
   border: 1px solid #ddd;
   border-radius: 5px;
-  color: #ffffff; /* Change font color to black */
-} 
+  color: #ffffff; /* Text color */
+}
+
+.about-box h3 {
+  font-size: 1.8rem; /* Slightly larger heading text */
+  color: #ffb6c1; /* Accent color for the heading */
+  margin-bottom: 0.5rem; /* Add spacing below the heading */
+}
+
+.about-box p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
 
 .typewriter {
   overflow: hidden;
@@ -354,4 +364,20 @@ ul li {
   content: "";
   display: table;
   clear: both;
+}
+
+/* Enhypen Button */
+.enhypen-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffb6c1; /* Accent color */
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.enhypen-button:hover {
+  background-color: #aaaaaa;
 }
