@@ -237,10 +237,21 @@ footer p {
   font-size: 1.2rem;
 }
 
+/*SKILLS AESTHETIC*/
+.skill-category p {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.skill-category p:hover {
+  color: #ffffff;
+  transform: translateX(10px);
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: 2rem; /* Adjust space between skill categories */
 }
 
 .skill-category {
@@ -251,21 +262,26 @@ footer p {
   text-align: center;
   transition: all 0.3s ease;
 }
+
 .skill-category:hover {
   background-color: #aaaaaa;
   transform: scale(1.05);
 }
+
 .skill-category h3 {
-  color: #ffb6c1;
+  color: #ffb6c1; /* Accent color */
   margin-bottom: 1rem;
 }
+
 .skill-category p {
   font-size: 1.1rem;
   margin: 0.5rem 0;
 }
+
 .skill-category i {
   margin-right: 8px;
 }
+
 
 /* Profile Picture */
 .profile-photo img {
