@@ -1,58 +1,55 @@
-/* General Reset and Styling */
+/*STYLING PAGES*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base Font Size */
+/*BASE FONT*/
 body {
-  font-size: 16px; /* Default font size for body */
-  line-height: 1.6; /* Optional: to improve readability */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-size: 16px; 
+  line-height: 1.6; 
+  overflow-x: hidden; 
   padding: 0;
   margin: 0;
 }
 
-/* Heading Sizes */
+/*HEADING SIZES*/
 h1 {
   font-size: 4em;
 }
-
 h2 {
   font-size: 2em;
 }
-
 h3 {
   font-size: 1.75em;
 }
-
 p {
-  font-size: 1.5rem; /* Adjusted font size for better responsiveness */
+  font-size: 1.5rem; 
 }
 
+/*RESUME BUTTON*/
 .resume-button {
   display: inline-block;
-  padding: 5px 10px; /* Similar padding to enhypen-button */
-  font-size: 1.2rem; /* Similar font size to enhypen-button */
-  color: #000000; /* Text color */
-  background-color: #ffb6c1; /* Accent color */
+  padding: 5px 10px; 
+  font-size: 1.2rem; 
+  color: #000000; 
+  background-color: #ffb6c1; 
   text-decoration: none;
-  border-radius: 20px; /* Slightly rounded corners */
+  border-radius: 20px; 
   font-weight: bold;
-  border: 2px solid #333; /* Contrast border color */
+  border: 2px solid #333; 
   transition: all 0.3s ease;
   text-align: center;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Similar shadow style */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); 
 }
-
+/*RESUME BUTTON HOVER*/
 .resume-button:hover {
-  background-color: #aaaaaa; /* Light pink on hover */
-  color: #333; /* Text color changes to dark gray */
-  transform: scale(1.05); /* Slightly enlarged effect */
-  border-color: #333; /* Invert border color on hover */
+  background-color: #aaaaaa; 
+  color: #333; 
+  transform: scale(1.05); 
+  border-color: #333; 
 }
-
 
 @media (max-width: 768px) {
   .about-box {
@@ -60,7 +57,7 @@ p {
   }
 }
 
-/* Navigation Bar */
+/*NAVIGATION BAR: HOME, ABOUT, SKILLS, PROJECTS, CONTACTS*/
 nav {
   position: fixed;
   top: 0;
@@ -110,9 +107,9 @@ nav ul li a:hover {
   }
 }
 
-/* Sections */
+/*SECTIONS*/
 .section {
-  min-height: 100vh; /* Ensures content fits without cutting off */
+  min-height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,25 +119,26 @@ nav ul li a:hover {
 }
 
 #home {
-  background: #ffb6c1; /* Soft pink */
+  background: #ffb6c1; 
 }
 
 #about {
-  background: #aaaaaa; /* Peachy pink */
+  background: #aaaaaa; 
 }
 
 #skills {
-  background: #ffb6c1; /* Soft pink */
+  background: #ffb6c1; 
 }
 
 #projects {
-  background: #aaaaaa; /* Blush pink */
+  background: #aaaaaa; 
 }
 
 #contact {
-  background: #ffb6c1; /* Classic pink */
+  background: #ffb6c1; 
 }
 
+/*FOOTER*/
 footer {
   background-color: #333;
   padding: 1rem;
@@ -164,7 +162,7 @@ footer p {
   font-size: 0.9rem;
 }
 
-/* About Me Section */
+/*ABOUT ME*/
 .about-me {
   display: flex;
   flex-direction: column;
@@ -189,7 +187,7 @@ footer p {
   line-height: 1.6;
 }
 
-/* Typewriter Animation */
+/*TYPEWRITER ANIMATION*/
 .typewriter {
   overflow: hidden;
   white-space: nowrap;
@@ -215,7 +213,7 @@ footer p {
   }
 }
 
-/* Cards and Skills */
+/*CARDS/SKILLS*/
 .intro-cards {
   display: flex;
   flex-wrap: wrap;
@@ -251,7 +249,7 @@ footer p {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem; /* Adjust space between skill categories */
+  gap: 2rem; 
 }
 
 .skill-category {
@@ -269,7 +267,7 @@ footer p {
 }
 
 .skill-category h3 {
-  color: #ffb6c1; /* Accent color */
+  color: #ffb6c1; 
   margin-bottom: 1rem;
 }
 
@@ -283,7 +281,7 @@ footer p {
 }
 
 
-/* Profile Picture */
+/*PROFILE PICTURE*/
 .profile-photo img {
   border-radius: 50%;
   max-width: 100%;
@@ -293,7 +291,7 @@ footer p {
   margin-bottom: 10px;
 }
 
-/* Buttons */
+/*BUTTONS*/
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -317,48 +315,50 @@ footer p {
 }
 
 .about-button {
-  display: block; /* Ensures the button takes up the full width */
-  margin: 20px auto 0; /* Push below the GIF */
-  padding: 7px 14px; /* Increased padding */
-  background-color: #333; /* Accent color */
-  color: #ffffff; /* Text color */
+  display: block; 
+  margin: 20px auto 0; 
+  padding: 7px 14px; 
+  background-color: #333;
+  color: #ffffff; 
   text-decoration: none;
   border: 2px solid #ffffff;
   border-radius: 25px;
   font-weight: bold;
-  font-size: 1rem; /* Increased font size */
+  font-size: 1rem; 
   transition: background-color 0.3s ease, color 0.3s ease;
   text-align: center;
-  width: fit-content; /* Ensures it fits the content properly */
+  width: fit-content; 
 }
 
 .about-button:hover {
-  background-color: #aaaaaa; /* Hover background color */
-  color: #fff; /* Hover text color */
+  background-color: #aaaaaa; 
+  color: #fff; 
 }
 
+/*ENHYPEN DREAM STAGE BUTTON*/
 .enhypen-button {
   display: inline-block;
-  padding: 5px 10px; /* Reduced padding */
-  font-size: 1.2rem; /* Smaller font size */
-  color: #000000; /* Text color */
-  background-color: #ffb6c1; /* Deep pink-purple shade */
+  padding: 5px 10px; 
+  font-size: 1.2rem;
+  color: #000000; 
+  background-color: #ffb6c1; 
   text-decoration: none;
-  border-radius: 20px; /* Slightly smaller rounded corners */
+  border-radius: 20px; 
   font-weight: bold;
-  border: 2px solid #333; /* Light pink border for contrast */
+  border: 2px solid #333; 
   transition: all 0.3s ease;
   text-align: center;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Slightly reduced shadow */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .enhypen-button:hover {
-  background-color: #aaaaaa; /* Light pink on hover */
-  color: #333; /* Text color changes to dark gray */
-  transform: scale(1.05); /* Slightly less enlargement on hover */
-  border-color: #333; /* Invert border color on hover */
+  background-color: #aaaaaa; 
+  color: #333; 
+  transform: scale(1.05); 
+  border-color: #333; 
 }
 
+/*HTML SMOOTHNESS*/
 html {
   scroll-behavior: smooth;
   transition: all 0.3s ease-in-out;

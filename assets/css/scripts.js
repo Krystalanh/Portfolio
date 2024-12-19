@@ -1,4 +1,4 @@
-// Add active class to nav links when scrolling
+/*SCROLL SMOOTHNESS*/
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav ul li a");
 
