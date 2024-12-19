@@ -151,12 +151,59 @@ footer p {
 }
 
 
-/* Responsive */
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .about-box, .skill-category {
+    padding: 0.75rem; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-box, .skill-category {
+    padding: 0.5rem; /* Further reduce padding */
+  }
+}
+
 @media (max-width: 768px) {
   nav ul {
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: column; /* Stack navigation links vertically */
   }
+
+  .section ul li {
+    flex: 1 1 100%; /* Stack list items on smaller screens */
+  }
+
+  .hero h1 {
+    font-size: 3em; /* Adjust heading size for smaller screens */
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid columns */
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-button, .button {
+    padding: 8px 16px; /* Reduce button size */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .hero h1 {
+    font-size: 2.5em; /* More reduction in font size */
+  }
+}
+
+/* General element scaling and adjustments */
+body {
+  font-size: 14px; /* Reduce base font size */
+}
+
+.section {
+  padding: 10px 20px; /* Adjust padding for smaller screens */
+}
+
+nav {
+  padding: 5px 0; /* Optimize padding in the navigation bar */
 }
 
 /* Add styles for the 'about-me' section and boxes */
