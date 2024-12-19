@@ -4,11 +4,11 @@ Welcome to my website and my world!
 
 ## Table of Contents
 
-- [Description](#description)
-- [Getting Started](#getting-started)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Deployment](#deployment)
+- [Home](#home)
+- [About](#about)
+- [Skills](#skills)
+- [Projects](#projects)
+- [Contacts](#contacts)
 
 ---
 
