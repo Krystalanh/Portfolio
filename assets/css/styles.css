@@ -302,7 +302,7 @@ footer p {
 
 .about-button {
   display: block; /* Ensures the button takes up the full width */
-  margin: 20px auto 0; /* Top margin to push below the GIF, auto to center horizontally */
+  margin: 20px auto 0; /* Push below the GIF */
   padding: 7px 14px; /* Increased padding */
   background-color: #333; /* Accent color */
   color: #ffffff; /* Text color */
