@@ -351,3 +351,10 @@ ul li {
     flex: 1 1 100%; /* Stack items for smaller screens */
   }
 }
+
+/*fix overflow*/
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
