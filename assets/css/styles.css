@@ -256,22 +256,35 @@ p {
   font-size: 1.2rem; /* Adjust smaller text like in cards */
 }
 
-/* About Button */
+.hero {
+  text-align: center; /* Centers content horizontally */
+  display: flex;
+  flex-direction: column; /* Stacks elements vertically */
+  align-items: center; /* Centers elements horizontally */
+  justify-content: center; /* Centers content vertically if necessary */
+  gap: 1.5rem; /* Adds spacing between each child element */
+}
+
+.welcome-gif {
+  max-width: 100%; /* Ensures the GIF scales properly */
+  height: auto; /* Maintains aspect ratio */
+}
+
 .about-button {
-  font-size: 1.5rem; /* Larger font size */
-  padding: 0.5rem 1rem;
-  background-color: #333; /* Green background */
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-  margin: 1rem 0;
-  transition: background-color 0.3s ease;
+  margin-top: 1rem; /* Adds space between the GIF and the button */
+  padding: 0.75rem 1.5rem; /* Adjusts button size */
+  background-color: #333; /* Example button background */
+  color: white; /* Button text color */
+  text-decoration: none; /* Removes underline */
+  border-radius: 5px; /* Rounds corners */
+  font-size: 1.2rem; /* Adjusts font size */
+  transition: all 0.3s ease;
 }
+
 .about-button:hover {
-  background-color: #aaaaaa; /* Darker green on hover */
+  background-color: #aaaaaa; /* Darkens button on hover */
 }
+
 
 /* Smooth Scroll */
 html {
