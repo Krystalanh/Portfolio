@@ -5,36 +5,35 @@
   box-sizing: border-box;
 }
 
-/* styles.css */
-
 /* Base Font Size */
 body {
   font-size: 16px; /* Default font size for body */
   line-height: 1.6; /* Optional: to improve readability */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  padding: 0;
+  margin: 0;
 }
 
 /* Heading Sizes */
 h1 {
-  font-size: 4em; /* 40px, example */
+  font-size: 4em;
 }
 
 h2 {
-  font-size: 2em; /* 32px, example */
+  font-size: 2em;
 }
 
 h3 {
-  font-size: 1.75em; /* 28px, example */
+  font-size: 1.75em;
 }
 
 p {
-  font-size: 3em; /* 16px, example */
+  font-size: 1.5rem; /* Adjusted font size for better responsiveness */
 }
 
-/*Resume Button*/
+/* Resume Button */
 .resume-button {
   display: inline-block;
-
-
   padding: 10px 20px;
   background-color: #ffb6c1; /* Accent color */
   color: rgb(0, 0, 0);
@@ -46,6 +45,7 @@ p {
 .resume-button:hover {
   background-color: #aaaaaa;
 }
+
 @media (max-width: 768px) {
   .about-box {
     padding: 0.5rem;
@@ -64,41 +64,47 @@ nav {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation Links Styled as Buttons */
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
   margin: 0;
   padding: 0;
 }
 
 nav ul li {
-  margin: 0 10px; /* Spacing between buttons */
+  margin: 0 10px;
 }
 
 nav ul li a {
-  display: inline-block; /* Makes the link behave like a button */
-  padding: 10px 20px; /* Adds padding inside the button */
-  border: 2px solid white; /* Button border */
-  border-radius: 25px; /* Rounded edges for the button */
-  text-decoration: none; /* Removes underline */
-  color: white; /* White text */
-  font-weight: bold; /* Bold font for buttons */
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
-  background: transparent; /* Transparent background by default */
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  background: transparent;
 }
 
-/* Hover Effect */
 nav ul li a:hover {
-  background: #ffb6c1; /* Highlight color for hover */
-  color: #333; /* Text color changes on hover */
-  border-color: #ffb6c1; /* Border matches hover background */
+  background: #ffb6c1;
+  color: #333;
+  border-color: #ffb6c1;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    padding: 1rem;
+  }
 }
 
 /* Sections */
 .section {
-  height: 100vh; /* Full screen height */
+  min-height: 100vh; /* Ensures content fits without cutting off */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,7 +134,7 @@ nav ul li a:hover {
 }
 
 footer {
-  background-color: #333; /* Dark background for footer */
+  background-color: #333;
   padding: 1rem;
   text-align: center;
   color: #fff;
@@ -150,63 +156,7 @@ footer p {
   font-size: 0.9rem;
 }
 
-
-/* Responsive Adjustments */
-@media (max-width: 1200px) {
-  .about-box, .skill-category {
-    padding: 0.75rem; /* Reduce padding for smaller screens */
-  }
-}
-
-@media (max-width: 1024px) {
-  .about-box, .skill-category {
-    padding: 0.5rem; /* Further reduce padding */
-  }
-}
-
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column; /* Stack navigation links vertically */
-  }
-
-  .section ul li {
-    flex: 1 1 100%; /* Stack list items on smaller screens */
-  }
-
-  .hero h1 {
-    font-size: 3em; /* Adjust heading size for smaller screens */
-  }
-
-  .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid columns */
-  }
-}
-
-@media (max-width: 480px) {
-  .resume-button, .button {
-    padding: 8px 16px; /* Reduce button size */
-    font-size: 14px; /* Adjust font size */
-  }
-
-  .hero h1 {
-    font-size: 2.5em; /* More reduction in font size */
-  }
-}
-
-/* General element scaling and adjustments */
-body {
-  font-size: 14px; /* Reduce base font size */
-}
-
-.section {
-  padding: 10px 20px; /* Adjust padding for smaller screens */
-}
-
-nav {
-  padding: 5px 0; /* Optimize padding in the navigation bar */
-}
-
-/* Add styles for the 'about-me' section and boxes */
+/* About Me Section */
 .about-me {
   display: flex;
   flex-direction: column;
@@ -217,13 +167,13 @@ nav {
   background-color: #585858;
   border: 1px solid #ddd;
   border-radius: 5px;
-  color: #ffffff; /* Text color */
+  color: #ffffff;
 }
 
 .about-box h3 {
-  font-size: 1.8rem; /* Slightly larger heading text */
-  color: #ffb6c1; /* Accent color for the heading */
-  margin-bottom: 0.5rem; /* Add spacing below the heading */
+  font-size: 1.8rem;
+  color: #ffb6c1;
+  margin-bottom: 0.5rem;
 }
 
 .about-box p {
@@ -231,6 +181,7 @@ nav {
   line-height: 1.6;
 }
 
+/* Typewriter Animation */
 .typewriter {
   overflow: hidden;
   white-space: nowrap;
@@ -247,127 +198,43 @@ nav {
   }
 }
 
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #ffb6c1;
+  }
+}
+
+/* Cards and Skills */
 .intro-cards {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
   margin-top: 5%;
 }
 
 .card {
   background: rgba(255, 255, 255, 0.1);
-  padding: 5px;
+  padding: 1rem;
   border-radius: 10px;
   text-align: center;
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.card i {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.hero h1 {
-  animation: fadeInDown 1.5s ease;
-}
-
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-/*Profile Picture*/
-}
-.profile-photo img {
-  border-radius: 50%;
-  width: 100%; /* Adjust to the desired width */
-  height: 100%; /* Adjust to the desired height */
-  object-fit: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 1.5rem; /* Increase font size for paragraphs */
-}
-
-/* For smaller elements */
 .card p {
-  font-size: 1.2rem; /* Adjust smaller text like in cards */
+  font-size: 1.2rem;
 }
 
-.hero {
-  display: flex;
-  flex-direction: column; /* Stacks elements vertically */
-  align-items: center; /* Centers elements horizontally */
-  justify-content: center; /* Centers content vertically */
-  text-align: center; /* Centers text horizontally */
-  gap: 1.5rem; /* Adds spacing between each child element */
-}
-
-.welcome-gif {
-  max-width: 100%; /* Ensures the GIF scales properly */
-  height: auto; /* Maintains aspect ratio */
-}
-
-.about-button {
-  margin-top: 1rem; /* Adds space between the GIF and the button */
-  padding: 0.75rem 1.5rem; /* Adjusts button size */
-  background-color: #333; /* Example button background */
-  color: white; /* Button text color */
-  text-decoration: none; /* Removes underline */
-  border-radius: 5px; /* Rounds corners */
-  font-size: 1.2rem; /* Adjusts font size */
-  transition: all 0.3s ease;
-}
-
-.about-button:hover {
-  background-color: #aaaaaa; /* Darkens button on hover */
-}
-
-/* Smooth Scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/*CONTACT BUTTONS*/
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #aaaaaa; /* Accent color */
-  color: black;
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: bold;
-  text-align: center;
-  transition: background-color 0.3s ease;
-}
-.button:hover {
-  background-color: #aaaaaa;
-  ; /* Darker background on hover */
-}
-
-/*SKILLS AESTHETIC*/
-.skill-category p {
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.skill-category p:hover {
-  color: #ffffff;
-  transform: translateX(10px);
-}
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem; /* Adjust space between skill categories */
+  gap: 2rem;
 }
+
 .skill-category {
   background-color: #333;
   padding: 1.5rem;
@@ -381,7 +248,7 @@ html {
   transform: scale(1.05);
 }
 .skill-category h3 {
-  color: #ffb6c1; /* Accent color */
+  color: #ffb6c1;
   margin-bottom: 1rem;
 }
 .skill-category p {
@@ -392,11 +259,21 @@ html {
   margin-right: 8px;
 }
 
-/*Buttons for project*/
+/* Profile Picture */
+.profile-photo img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+}
+
+/* Buttons */
 .button {
   display: inline-block;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 1rem;
   color: #fff;
   background-color: #ffb6c1;
   border: none;
@@ -411,70 +288,46 @@ html {
   background-color: #333;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+.gif-container {
+  margin: 20px 0;
 }
 
-ul li {
-  margin: 10px 0;
-}
-.section ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-  list-style: none;
-}
-.section ul li {
-  flex: 1 1 calc(33.333% - 16px); /* Three items per row */
-  box-sizing: border-box;
-}
-@media (max-width: 768px) {
-  .section ul li {
-    flex: 1 1 100%; /* Stack items for smaller screens */
-  }
-}
-
-/*fix overflow*/
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Enhypen Button */
-.enhypen-button {
+.about-button {
   display: inline-block;
+  margin-top: 20px;
   padding: 10px 20px;
-  background-color: #ffb6c1; /* Accent color */
-  color: rgb(0, 0, 0);
+  background-color: #333; /* Accent color */
+  color: #ffffff; /* Text color */
   text-decoration: none;
+  border: 2px solid #ffffff;
   border-radius: 25px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #aaaaaa; /* Hover background color */
+  color: #fff; /* Hover text color */
+}
+
+.enhypen-button {
+  display: inline-block;
+  padding: 5px 10px; /* Reduced padding */
+  font-size: 1.2rem; /* Smaller font size */
+  color: #000000; /* Text color */
+  background-color: #ffb6c1; /* Deep pink-purple shade */
+  text-decoration: none;
+  border-radius: 20px; /* Slightly smaller rounded corners */
+  font-weight: bold;
+  border: 2px solid #333; /* Light pink border for contrast */
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Slightly reduced shadow */
 }
 
 .enhypen-button:hover {
-  background-color: #aaaaaa;
-}
-
-.button {
-  font-size: 1em; /* 20px, example */
-  text-decoration: none;
-  color: #fff;
-  background-color: #ffb6c1; /* Adjust background color */
-  padding: 0.5em 1em;
-  border-radius: 5px;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #333; /* Darker shade on hover */
-}
-
-/* Adjustments for specific links */
-#contact .button {
-  font-size: 1.2em; /* Larger size for better visibility */
+  background-color: #aaaaaa; /* Light pink on hover */
+  color: #333; /* Text color changes to dark gray */
+  transform: scale(1.05); /* Slightly less enlargement on hover */
+  border-color: #333; /* Invert border color on hover */
 }
