@@ -5,13 +5,36 @@
   box-sizing: border-box;
 }
 
+/* styles.css */
+
+/* Base Font Size */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-size: 16px; /* Default font size for body */
+  line-height: 1.6; /* Optional: to improve readability */
 }
+
+/* Heading Sizes */
+h1 {
+  font-size: 4em; /* 40px, example */
+}
+
+h2 {
+  font-size: 2em; /* 32px, example */
+}
+
+h3 {
+  font-size: 1.75em; /* 28px, example */
+}
+
+p {
+  font-size: 3em; /* 16px, example */
+}
+
 /*Resume Button*/
 .resume-button {
   display: inline-block;
+
+
   padding: 10px 20px;
   background-color: #ffb6c1; /* Accent color */
   color: rgb(0, 0, 0);
@@ -104,23 +127,22 @@ nav ul li a:hover {
   background: #ffb6c1; /* Classic pink */
 }
 
+footer {
+  background-color: #333; /* Dark background for footer */
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
 h1, h2 {
   margin-bottom: 1rem;
 }
-
 p, ul {
   font-size: 1.1rem;
 }
 
 ul {
   list-style: none;
-}
-
-footer {
-  background-color: #333; /* Dark background for footer */
-  padding: 1rem;
-  text-align: center;
-  color: #fff;
 }
 
 footer p {
@@ -223,10 +245,6 @@ footer p {
   object-fit: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   margin-bottom: 10px;
-}
-
-h1, h2 {
-  font-size: 3rem; /* Increase font size for headings */
 }
 
 p {
@@ -380,4 +398,24 @@ ul li {
 
 .enhypen-button:hover {
   background-color: #aaaaaa;
+}
+
+.button {
+  font-size: 1em; /* 20px, example */
+  text-decoration: none;
+  color: #fff;
+  background-color: #ffb6c1; /* Adjust background color */
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #333; /* Darker shade on hover */
+}
+
+/* Adjustments for specific links */
+#contact .button {
+  font-size: 1.2em; /* Larger size for better visibility */
 }
