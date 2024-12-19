@@ -261,7 +261,7 @@ p {
   display: flex;
   flex-direction: column; /* Stacks elements vertically */
   align-items: center; /* Centers elements horizontally */
-  justify-content: center; /* Centers content vertically if necessary */
+  justify-content: center; /* Centers content vertically */
   gap: 1.5rem; /* Adds spacing between each child element */
 }
 
@@ -284,7 +284,6 @@ p {
 .about-button:hover {
   background-color: #aaaaaa; /* Darkens button on hover */
 }
-
 
 /* Smooth Scroll */
 html {
